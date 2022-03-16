@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "476855589188",
+    "project_id": "mcommerceapp-v-2-0",
+    "storage_bucket": "mcommerceapp-v-2-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476855589188:android:4085c72186782caf1f9f11",
+        "android_client_info": {
+          "package_name": "com.example.plant_app_v2_0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476855589188-avog6pttgilfurafijep6pjfvi4ehv3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_ct8ZqJyIrWZon_-opkZRSMaprnjD0mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476855589188-avog6pttgilfurafijep6pjfvi4ehv3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
