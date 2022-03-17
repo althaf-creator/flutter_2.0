@@ -10,10 +10,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Mcommerce.auth = FirebaseAuth.instance;
-  Mcommerce.sharedPreferences = await SharedPreferences.getInstance();
-  Mcommerce.firestore = Firestore.instance;
-  runApp(MyApp());
+  await Firebase.initializeApp();
+  //Mcommerce.auth = FirebaseAuth.instance;
+  //Mcommerce.sharedPreferences = await SharedPreferences.getInstance();
+  //Mcommerce.firestore = Firestore.instance;
+ //runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
