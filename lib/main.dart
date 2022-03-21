@@ -24,7 +24,7 @@ Future<void> main() async {
   Mcommerce.auth = FirebaseAuth.instance;
   Mcommerce.sharedPreferences = await SharedPreferences.getInstance();
   Mcommerce.firestore = Firestore.instance;
-  //runApp(MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
