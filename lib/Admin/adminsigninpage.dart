@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_app_v2_0/Admin/adminShiftArea.dart';
 import 'package:plant_app_v2_0/Admin/uploaditems.dart';
 import 'package:plant_app_v2_0/Authentication/authentication.dart';
 import 'package:plant_app_v2_0/Widgets/customtextfield.dart';
@@ -161,7 +162,7 @@ class _AdminSignInScrennState extends State<AdminSignInScrenn> {
             _admineditingController.text = "";
             _passwordeditingController.text = "";
           });
-          Route route = MaterialPageRoute(builder: (c) => UploadPage());
+          Route route = MaterialPageRoute(builder: (c) => AdminShiftOrders());
           Navigator.pushReplacement(context, route);
         }
       });

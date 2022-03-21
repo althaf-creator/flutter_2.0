@@ -156,13 +156,11 @@ class _regsiterState extends State<regsiter> {
 
     String imagefilename = DateTime.now().millisecondsSinceEpoch.toString();
 
-    StorageReference storageReference =
-        FirebaseStorage.instance.ref().child(imagefilename);
+    StorageReference storageReference = FirebaseStorage.instance.ref().child(imagefilename);
 
     StorageUploadTask storageUploadTask = storageReference.putFile(_imageFile);
 
-    StorageTaskSnapshot storageTaskSnapshot =
-        await storageUploadTask.onComplete;
+    StorageTaskSnapshot storageTaskSnapshot = await storageUploadTask.onComplete;
 
     await storageTaskSnapshot.ref.getDownloadURL().then((urlImage) {
       imageUrl = urlImage;
@@ -179,9 +177,7 @@ class _regsiterState extends State<regsiter> {
         .createUserWithEmailAndPassword(
       email: _maileditingController.text.trim(),
       password: _passeditingController.text.trim(),
-    )
-        .then((auth) {
-      firebaseUser = auth.user;
+    ).then((auth) {firebaseUser = auth.user;
     }).catchError((error) {
       Navigator.pop(context);
       showDialog(
@@ -211,13 +207,9 @@ class _regsiterState extends State<regsiter> {
     });
 
     await Mcommerce.sharedPreferences.setString(Mcommerce.userUID, fuser.uid);
-    await Mcommerce.sharedPreferences
-        .setString(Mcommerce.userEmail, fuser.email);
-    await Mcommerce.sharedPreferences
-        .setString(Mcommerce.userName, _nameeditingController.text.trim());
-    await Mcommerce.sharedPreferences
-        .setString(Mcommerce.userAvatarUrl, imageUrl);
-    await Mcommerce.sharedPreferences
-        .setStringList(Mcommerce.userCartList, ["garbageValue"]);
+    await Mcommerce.sharedPreferences.setString(Mcommerce.userEmail, fuser.email);
+    await Mcommerce.sharedPreferences.setString(Mcommerce.userName, _nameeditingController.text.trim());
+    await Mcommerce.sharedPreferences.setString(Mcommerce.userAvatarUrl, imageUrl);
+    await Mcommerce.sharedPreferences.setStringList(Mcommerce.userCartList, ["garbageValue"]);
   }
 }

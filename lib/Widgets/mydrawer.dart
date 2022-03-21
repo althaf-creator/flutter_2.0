@@ -6,6 +6,7 @@ import 'package:plant_app_v2_0/Storehome/Storehome.dart';
 import 'package:plant_app_v2_0/Storehome/cart.dart';
 import 'package:plant_app_v2_0/Storehome/search.dart';
 import 'package:plant_app_v2_0/config/config.dart';
+import 'package:provider/provider.dart';
 
 class Mydrawer extends StatelessWidget {
   @override
@@ -77,7 +78,7 @@ class Mydrawer extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.home,
+                    Icons.reorder,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -96,7 +97,7 @@ class Mydrawer extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.home,
+                    Icons.shopping_cart,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -115,7 +116,7 @@ class Mydrawer extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.home,
+                    Icons.search,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -135,7 +136,7 @@ class Mydrawer extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.home,
+                    Icons.add_location,
                     color: Colors.white,
                   ),
                   title: Text(
@@ -155,7 +156,7 @@ class Mydrawer extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Icon(
-                    Icons.home,
+                    Icons.exit_to_app,
                     color: Colors.white,
                   ),
                   title: Text(
