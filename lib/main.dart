@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.blueGrey,
           primarySwatch: Colors.blue,
         ),
-        home: Storehome(),
+        home: Authentication(),
       ),
     );
   }
